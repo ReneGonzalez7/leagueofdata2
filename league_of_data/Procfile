@@ -1,0 +1,1 @@
+web: gunicorn league_of_data.wsgi --bind 0.0.0.0:$PORT

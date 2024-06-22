@@ -1,0 +1,99 @@
+/* Colores */
+
+a{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+}
+
+.nav-link{
+    color:goldenrod;
+    font-size: larger;
+    
+}
+
+.nav-link:hover{
+    color: bisque;
+}
+
+.custom-nav{
+    background-color: #0D1F2D;
+}
+
+.container{
+    background-color: #142431;
+}
+
+.Logo img{
+    width: 100px;
+    height: 100px;
+    clip-path: circle(50%);
+    object-fit: cover;
+}
+
+
+/* Fondo */
+body{
+    position: relative;
+    background-image: url('../imgs/SumRift.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";  /* Necesario para que el pseudo-elemento se muestre */
+    position: absolute;  /* Posicionamiento absoluto respecto al body */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);  /* Color negro con 50% de opacidad */
+    z-index: -1;  /* Coloca el pseudo-elemento detrás del contenido del body */
+}
+
+
+/* Posicion */
+.navbar-nav{
+    margin-left: 34vw;
+    margin-right: auto;
+}
+
+.navbar-collapse{
+    justify-content: center;
+}
+
+.Logo{
+    margin-left: 1vw;
+    margin-right: auto;
+}
+
+.graph-img {
+    align-content: center;
+}
+
+.small-img{
+    width: 10%;
+    height: 10%;
+}
+
+.mid-img{
+    width: 20%;
+    height: 20%;
+}
+
+.large-img{
+    width: 80%;
+    height: 80%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Define dos columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las columnas */
+  }
+  .grid-item {
+    background-color: #142431;
+    /* Estilos adicionales para cada ítem si es necesario */
+  }
